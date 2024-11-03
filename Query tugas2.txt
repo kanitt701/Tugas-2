@@ -1,0 +1,35 @@
+Berikut adalah beberapa query SQL yang sesuai dengan permintaan Anda untuk database MySQL dengan tabel Buku:
+
+1. **Mengambil semua buku dengan kategori "fiksi":**
+
+   ```sql
+
+   SELECT * FROM Buku WHERE kategori = 'fiksi';
+
+   ```
+
+2. **Mengambil semua buku yang diterbitkan setelah tahun 2006:**
+
+   ```sql
+
+   SELECT * FROM Buku WHERE tahun_terbit > 2006;
+
+   ```
+
+3. **Mengambil semua buku yang ditulis oleh pengarang "Andrea Hinata":**
+
+   ```sql
+
+   SELECT * FROM Buku WHERE pengarang = 'Andrea Hinata';
+
+   ```
+
+4. **Memperbarui penerbit dari buku "Dilan" yang berjudul "Dia adalah Dilanku tahun 1990" menjadi "Mizan":**
+
+   ```sql
+
+   UPDATE Buku 
+   SET penerbit = 'Mizan' 
+   WHERE judul = 'Dia adalah Dilanku tahun 1990';
+
+   ```
